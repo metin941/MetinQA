@@ -18,7 +18,7 @@ body {
   overflow: hidden;
   background: var(--dark);
   color: #fff;
-  padding: .75rem 1rem;
+  padding: 1.5rem 1rem;
 }
 /* Animated background canvas fills the hero */
 .bg-canvas {
@@ -325,5 +325,8 @@ h3 { margin: 1rem 0 .5rem; }
   text-align: center;
   margin-top: .5rem;
   font-size: .8rem;
+}
+[data-i18n="aboutText"] {
+  white-space: pre-line;
 }
 .admin-link a { color: #777; }
