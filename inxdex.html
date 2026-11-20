@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="pageTitle">Metin Hasanov – QA Manual & Automation</title>
+  <meta name="description" data-i18n-attr="content:metaDescription" content="Professional CV of a QA Manual & Automation Engineer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button class="lang-btn" data-lang="bg" aria-label="Български">BG</button>
+      <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+    </div>
+    <img src="photo.jpg" alt="Metin Hasanov" class="photo" data-i18n-attr="alt:photoAlt">
+    <h1 data-i18n="name">Metin Hasanov</h1>
+    <p class="subtitle" data-i18n="subtitle">QA Manual & Automation Engineer</p>
+    <div class="contacts">
+      <a href="mailto:m.hasanov@gmail.com">m.hasanov@gmail.com</a>
+      <a href="https://github.com/your-username" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="about" role="tab" data-i18n="tabAbout">About</button>
+    <button class="tab" data-tab="experience" role="tab" data-i18n="tabExperience">Experience</button>
+    <button class="tab" data-tab="training" role="tab" data-i18n="tabTraining">Training</button>
+    <button class="tab" data-tab="certs" role="tab" data-i18n="tabCerts">Certificates</button>
+    <button class="tab" data-tab="testimonials" role="tab" data-i18n="tabTestimonials">Testimonials</button>
+  </nav>
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="panel active">
+      <h2 data-i18n="aboutTitle">About me</h2>
+      <p data-i18n="aboutText">QA specialist with experience in manual and automated testing of web and desktop applications.</p>
+      <h3 data-i18n="skillsTitle">Key skills</h3>
+      <ul class="tags">
+        <li data-i18n="skill1">Manual Testing</li>
+        <li data-i18n="skill2">Test Case Design</li>
+        <li data-i18n="skill3">Regression Testing</li>
+        <li>Playwright</li>
+        <li>Selenium</li>
+        <li>Python</li>
+        <li>pytest</li>
+        <li data-i18n="skill4">API Testing</li>
+        <li>Jira / Azure DevOps</li>
+        <li>Git</li>
+      </ul>
+    </section>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="panel">
+      <h2 data-i18n="expTitle">Professional experience</h2>
+      <article class="card">
+        <header>
+          <h3 data-i18n="exp1Role">QA Engineer</h3>
+          <span class="meta"><span data-i18n="exp1Company">Company XXX</span> · 2022 – <span data-i18n="present">present</span></span>
+        </header>
+        <ul>
+          <li data-i18n="exp1b1">Writing and maintaining over 500 manual test cases.</li>
+          <li data-i18n="exp1b2">Building Playwright + pytest automation for the Desigo BMS web interface.</li>
+          <li data-i18n="exp1b3">Integrating tests into the CI/CD pipeline.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <header>
+          <h3 data-i18n="exp2Role">Junior QA Tester</h3>
+          <span class="meta"><span data-i18n="exp2Company">Company YYY</span> · 2020 – 2022</span>
+        </header>
+        <ul>
+          <li data-i18n="exp2b1">Manual testing of mobile apps and web portals.</li>
+          <li data-i18n="exp2b2">Documenting and tracking defects in Jira.</li>
+        </ul>
+      </article>
+    </section>
+    <!-- TRAINING -->
+    <section id="training" class="panel">
+      <h2 data-i18n="trainTitle">Training</h2>
+      <article class="card">
+        <header>
+          <h3 data-i18n="train1Title">Advanced Test Automation with Python</h3>
+          <span class="meta" data-i18n="train1Meta">Online course · 2023</span>
+        </header>
+        <p data-i18n="train1Desc">Building a test framework with pytest, the page object model and CI integration.</p>
+      </article>
+      <article class="card">
+        <header>
+          <h3>ISTQB Foundation Level</h3>
+          <span class="meta">2021</span>
+        </header>
+        <p data-i18n="train2Desc">Testing fundamentals, test techniques and the test process.</p>
+      </article>
+    </section>
+    <!-- CERTIFICATES -->
+    <section id="certs" class="panel">
+      <h2 data-i18n="certsTitle">Certificates</h2>
+      <ul class="cert-list">
+        <li>
+          <span><strong>ISTQB CTFL</strong> – 2021</span>
+          <a href="certs/istqb-ctfl.pdf" target="_blank" data-i18n="view">View</a>
+        </li>
+        <li>
+          <span><strong>Playwright Certified Engineer</strong> – 2024</span>
+          <a href="certs/playwright.pdf" target="_blank" data-i18n="view">View</a>
+        </li>
+      </ul>
+    </section>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="panel">
+      <h2 data-i18n="testTitle">Testimonials</h2>
+      <blockquote class="testimonial">
+        <p data-i18n="test1Quote">"Metin is extremely organized and thorough. His automation saves hours of manual work every sprint."</p>
+        <footer data-i18n="test1Author">— Name Surname, Test Manager, Company XXX</footer>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p data-i18n="test2Quote">"Accurate and clear bug reports that the team could act on immediately."</p>
+        <footer data-i18n="test2Author">— Name Surname, Product Owner, Company YYY</footer>
+      </blockquote>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p data-i18n="footer">© 2026 Metin Hasanov</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
