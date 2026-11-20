@@ -9,29 +9,32 @@
 </head>
 <body>
   <header class="hero">
+    <canvas class="bg-canvas" aria-hidden="true"></canvas>
     <div class="lang-switch" role="group" aria-label="Language">
       <button class="lang-btn" data-lang="bg" aria-label="Български">BG</button>
       <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
     </div>
-    <img src="photo.jpg" alt="Metin Hasanov" class="photo" data-i18n-attr="alt:photoAlt">
-    <h1 data-i18n="name">Metin Hasanov</h1>
-    <p class="subtitle" data-i18n="subtitle">QA Manual & Automation Engineer</p>
-    <div class="contacts">
-      <a href="mailto:m.hasanov@gmail.com">m.hasanov@gmail.com</a>
-      <a href="https://github.com/metin941" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/metin941" target="_blank">LinkedIn</a>
+    <div class="hero-profile">
+      <img src="photo.jpg" alt="Metin Hasanov" class="photo" data-i18n-attr="alt:photoAlt">
+      <h1 data-i18n="name">Metin Hasanov</h1>
+      <p class="subtitle" data-i18n="subtitle">QA Manual & Automation Engineer</p>
+      <div class="contacts">
+        <a href="mailto:m.hasanov@gmail.com">m.hasanov@gmail.com</a>
+        <a href="https://github.com/metin941" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/metin941" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
   </header>
   <nav class="tabs" role="tablist">
-    <button class="tab active" data-tab="about" role="tab" data-i18n="tabAbout">About</button>
-    <button class="tab" data-tab="experience" role="tab" data-i18n="tabExperience">Experience</button>
-    <button class="tab" data-tab="training" role="tab" data-i18n="tabTraining">Training</button>
-    <button class="tab" data-tab="certs" role="tab" data-i18n="tabCerts">Certificates</button>
-    <button class="tab" data-tab="testimonials" role="tab" data-i18n="tabTestimonials">Testimonials</button>
+    <button class="tab active" data-tab="about" role="tab" aria-selected="true" aria-controls="about" data-i18n="tabAbout">About</button>
+    <button class="tab" data-tab="experience" role="tab" aria-selected="false" aria-controls="experience" data-i18n="tabExperience">Experience</button>
+    <button class="tab" data-tab="training" role="tab" aria-selected="false" aria-controls="training" data-i18n="tabTraining">Training</button>
+    <button class="tab" data-tab="certs" role="tab" aria-selected="false" aria-controls="certs" data-i18n="tabCerts">Certificates</button>
+    <button class="tab" data-tab="testimonials" role="tab" aria-selected="false" aria-controls="testimonials" data-i18n="tabTestimonials">Testimonials</button>
   </nav>
   <main>
     <!-- ABOUT -->
-    <section id="about" class="panel active">
+    <section id="about" class="panel active" role="tabpanel">
       <h2 data-i18n="aboutTitle">About me</h2>
       <p data-i18n="aboutText">QA specialist with experience in manual and automated testing of web and desktop applications.</p>
       <h3 data-i18n="skillsTitle">Key skills</h3>
@@ -49,7 +52,7 @@
       </ul>
     </section>
     <!-- EXPERIENCE -->
-    <section id="experience" class="panel">
+    <section id="experience" class="panel" role="tabpanel">
       <h2 data-i18n="expTitle">Professional experience</h2>
       <article class="card">
         <header>
@@ -74,7 +77,7 @@
       </article>
     </section>
     <!-- TRAINING -->
-    <section id="training" class="panel">
+    <section id="training" class="panel" role="tabpanel">
       <h2 data-i18n="trainTitle">Training</h2>
       <article class="card">
         <header>
@@ -85,28 +88,28 @@
       </article>
       <article class="card">
         <header>
-          <h3>ISTQB Foundation Level</h3>
-          <span class="meta">2021</span>
+          <h3 data-i18n="train2Title">ISTQB Foundation Level</h3>
+          <span class="meta" data-i18n="train2Meta">2021</span>
         </header>
         <p data-i18n="train2Desc">Testing fundamentals, test techniques and the test process.</p>
       </article>
     </section>
     <!-- CERTIFICATES -->
-    <section id="certs" class="panel">
+    <section id="certs" class="panel" role="tabpanel">
       <h2 data-i18n="certsTitle">Certificates</h2>
       <ul class="cert-list">
         <li>
           <span><strong>ISTQB CTFL</strong> – 2021</span>
-          <a href="certs/istqb-ctfl.pdf" target="_blank" data-i18n="view">View</a>
+          <a href="certs/istqb-ctfl.pdf" target="_blank" rel="noopener" data-i18n="view">View</a>
         </li>
         <li>
           <span><strong>Playwright Certified Engineer</strong> – 2024</span>
-          <a href="certs/playwright.pdf" target="_blank" data-i18n="view">View</a>
+          <a href="certs/playwright.pdf" target="_blank" rel="noopener" data-i18n="view">View</a>
         </li>
       </ul>
     </section>
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" class="panel">
+<!-- TESTIMONIALS -->
+    <section id="testimonials" class="panel" role="tabpanel">
       <h2 data-i18n="testTitle">Testimonials</h2>
       <blockquote class="testimonial">
         <p data-i18n="test1Quote">"Metin is extremely organized and thorough. His automation saves hours of manual work every sprint."</p>
@@ -116,11 +119,73 @@
         <p data-i18n="test2Quote">"Accurate and clear bug reports that the team could act on immediately."</p>
         <footer data-i18n="test2Author">— Name Surname, Product Owner, Company YYY</footer>
       </blockquote>
+      <!-- Approved testimonials from the database -->
+      <div id="approvedList"></div>
+      <form id="testimonialForm" class="card testimonial-form" novalidate>
+        <h3 data-i18n="formTitle">Add a testimonial</h3>
+        <!-- Honeypot: hidden from people, bots tend to fill it in -->
+        <div class="hp" aria-hidden="true">
+          <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span data-i18n="labelName">Name *</span>
+            <input type="text" name="name" maxlength="100" data-i18n-attr="placeholder:phName" placeholder="Your name">
+          </label>
+          <label>
+            <span data-i18n="labelCompany">Company</span>
+            <input type="text" name="company" maxlength="100" data-i18n-attr="placeholder:phCompany" placeholder="Company name">
+          </label>
+        </div>
+        <label>
+          <span data-i18n="labelRole">Role / position *</span>
+          <input type="text" name="role" maxlength="100" data-i18n-attr="placeholder:phRole" placeholder="e.g. Test Manager">
+        </label>
+        <label>
+          <span data-i18n="labelMessage">Testimonial *</span>
+          <textarea name="message" rows="4" maxlength="1000" data-i18n-attr="placeholder:phMessage" placeholder="Write your testimonial here..."></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn" data-i18n="btnAdd">Send testimonial</button>
+        </div>
+        <p id="formStatus" class="form-status" role="status"></p>
+        <p class="form-note" data-i18n="formNote">Your testimonial will appear on the page after it is approved.</p>
+      </form>
+      <!-- Admin panel, opened from the footer link -->
+      <div id="adminPanel" class="card testimonial-form admin-panel" hidden>
+        <div id="adminLogin">
+          <h3 data-i18n="adminTitle">Admin login</h3>
+          <form id="loginForm" class="testimonial-form">
+            <label>
+              <span data-i18n="labelEmail">Email</span>
+              <input type="email" name="email" required autocomplete="username">
+            </label>
+            <label>
+              <span data-i18n="labelPassword">Password</span>
+              <input type="password" name="password" required autocomplete="current-password">
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn" data-i18n="btnLogin">Log in</button>
+            </div>
+            <p id="loginStatus" class="form-status" role="status"></p>
+          </form>
+        </div>
+        <div id="adminTools" hidden>
+          <div class="admin-head">
+            <h3 data-i18n="adminQueue">Testimonials</h3>
+            <button type="button" id="logoutBtn" class="btn btn-outline" data-i18n="btnLogout">Log out</button>
+          </div>
+          <div id="adminList"></div>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="site-footer">
     <p data-i18n="footer">© 2026 Metin Hasanov</p>
+    <p class="admin-link"><a href="#" id="adminLink" data-i18n="adminLink">Admin</a></p>
   </footer>
+  <script src="bg-animations.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
 </body>
 </html>
