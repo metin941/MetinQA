@@ -1,7 +1,6 @@
 import pytest
 from playwright.sync_api import sync_playwright, expect
 import pathlib
-import os
 
 @pytest.fixture(scope="session")
 def browser_context():
@@ -12,25 +11,12 @@ def browser_context():
         browser.close()
 
 @pytest.fixture
-def page(browser_context, request):
+def page(browser_context):
     page = browser_context.new_page()
     html_path = pathlib.Path(__file__).parent.parent / "index.html"
     page.goto(f"file://{html_path.resolve().as_posix()}")
     yield page
-    
-    # Take screenshot on test failure
-    if request.node.rep_call.failed:
-        os.makedirs("qa/failures", exist_ok=True)
-        safe_name = request.node.name.replace(" ", "_")
-        page.screenshot(path=f"qa/failures/{safe_name}.png")
-        
     page.close()
-
-@pytest.hookimpl(tryfirst=True, hookwrapper=True)
-def pytest_runtest_makereport(item, call):
-    outcome = yield
-    rep = outcome.get_result()
-    setattr(item, "rep_" + rep.when, rep)
 
 def test_page_title_and_header(page):
     expect(page).to_have_title("Metin Hasanov – QA Manual & Automation")
