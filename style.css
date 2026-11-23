@@ -48,7 +48,7 @@ body {
 }
 .photo {
   grid-column: 1;
-  grid-row: 1 / span 3;
+  grid-row: 1 / span 4;
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -75,15 +75,30 @@ body {
   margin-top: .15rem;
   text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
-.contacts {
+.contact-info {
   grid-column: 2;
   grid-row: 3;
+  align-self: start;
+  font-size: .85rem;
+  opacity: 0.9;
+  margin-top: .2rem;
+}
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+.contacts {
+  grid-column: 2;
+  grid-row: 4;
   align-self: start;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   font-size: .8rem;
-  margin-top: .4rem;
+  margin-top: .3rem;
 }
 .contacts a {
   color: #fff;
@@ -160,7 +175,18 @@ h3 { margin: 1rem 0 .5rem; }
   margin-bottom: 1rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .06);
 }
-.card header { display: flex; flex-direction: column; margin-bottom: .5rem; }
+.card header { display: flex; align-items: center; gap: 15px; margin-bottom: .75rem; }
+.company-logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 7px;
+  background: #f8f9fa;
+  padding: 3px;
+  border: 1px solid #e1e4e8;
+  flex-shrink: 0;
+}
+.card-titles { display: flex; flex-direction: column; }
 .card h3 { margin: 0; }
 .meta { color: #666; font-size: .9rem; }
 .card ul { padding-left: 1.2rem; }
@@ -269,6 +295,7 @@ h3 { margin: 1rem 0 .5rem; }
   }
   .hero-profile h1,
   .subtitle,
+  .contact-info,
   .contacts {
     grid-column: 1;
     grid-row: auto;

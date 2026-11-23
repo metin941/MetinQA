@@ -19,7 +19,7 @@
       <h1 data-i18n="name">Metin Hasanov</h1>
       <p class="subtitle" data-i18n="subtitle">QA Manual & Automation Engineer</p>
       <div class="contacts">
-        <a href="mailto:m.hasanov@gmail.com">m.hasanov@gmail.com</a>
+        <a href="mailto:contact@metinqa.dev">contact@metinqa.dev</a>
         <a href="https://github.com/metin941" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/metin941" target="_blank" rel="noopener">LinkedIn</a>
       </div>
@@ -28,70 +28,126 @@
   <nav class="tabs" role="tablist">
     <button class="tab active" data-tab="about" role="tab" aria-selected="true" aria-controls="about" data-i18n="tabAbout">About</button>
     <button class="tab" data-tab="experience" role="tab" aria-selected="false" aria-controls="experience" data-i18n="tabExperience">Experience</button>
-    <button class="tab" data-tab="training" role="tab" aria-selected="false" aria-controls="training" data-i18n="tabTraining">Training</button>
+    <button class="tab" data-tab="education" role="tab" aria-selected="false" aria-controls="education" data-i18n="tabEducation">Education</button>
     <button class="tab" data-tab="certs" role="tab" aria-selected="false" aria-controls="certs" data-i18n="tabCerts">Certificates</button>
+    <button class="tab" data-tab="myprojects" role="tab" aria-selected="false" aria-controls="myprojects" data-i18n="tabProjects">My Projects</button>
     <button class="tab" data-tab="testimonials" role="tab" aria-selected="false" aria-controls="testimonials" data-i18n="tabTestimonials">Testimonials</button>
   </nav>
   <main>
-    <!-- ABOUT -->
+    <!-- ABOUT & SKILLS -->
     <section id="about" class="panel active" role="tabpanel">
       <h2 data-i18n="aboutTitle">About me</h2>
       <p data-i18n="aboutText">QA specialist with experience in manual and automated testing of web and desktop applications.</p>
-      <h3 data-i18n="skillsTitle">Key skills</h3>
+      
+      <!-- Technical Skills -->
+      <h3 data-i18n="techSkillsTitle">Technical skills</h3>
       <ul class="tags">
-        <li data-i18n="skill1">Manual Testing</li>
+        <li data-i18n="skill1">Automation & Manual Testing</li>
         <li data-i18n="skill2">Test Case Design</li>
-        <li data-i18n="skill3">Regression Testing</li>
-        <li>Playwright</li>
-        <li>Selenium</li>
-        <li>Python</li>
-        <li>pytest</li>
-        <li data-i18n="skill4">API Testing</li>
-        <li>Jira / Azure DevOps</li>
-        <li>Git</li>
+        <li data-i18n="skill3">Test Frameworks (Selenium WebDriver, FlaUI, pytest)</li>
+        <li data-i18n="skill4">Programming Languages: C#, Python</li>
+        <li data-i18n="skill5">Version Control: Git, GitLab, GitHub</li>
+        <li data-i18n="skill6">CI/CD Pipelines</li>
+        <li data-i18n="skill7">Linux Systems & Hardware Troubleshooting</li>
+      </ul>
+      <!-- Personal Skills -->
+      <h3 data-i18n="softSkillsTitle" style="margin-top: 20px;">Personal skills</h3>
+      <ul class="tags">
+        <li data-i18n="soft1">Teamwork and Collaboration</li>
+        <li data-i18n="soft2">Problem-Solving</li>
+        <li data-i18n="soft3">Attention to Detail</li>
+        <li data-i18n="soft4">Adaptability & Time Management</li>
       </ul>
     </section>
     <!-- EXPERIENCE -->
     <section id="experience" class="panel" role="tabpanel">
       <h2 data-i18n="expTitle">Professional experience</h2>
+      <!-- Siemens -->
       <article class="card">
         <header>
-          <h3 data-i18n="exp1Role">QA Engineer</h3>
-          <span class="meta"><span data-i18n="exp1Company">Company XXX</span> · 2022 – <span data-i18n="present">present</span></span>
+          <img src="logo/siemens.png" alt="Siemens Logo" class="company-logo">
+          <div class="card-titles">
+            <h3 data-i18n="exp1Role">Test Automation Engineer</h3>
+            <span class="meta"><span data-i18n="exp1Company">Siemens</span> · 2023 – <span data-i18n="present">present</span></span>
+          </div>
         </header>
         <ul>
-          <li data-i18n="exp1b1">Writing and maintaining over 500 manual test cases.</li>
-          <li data-i18n="exp1b2">Building Playwright + pytest automation for the Desigo BMS web interface.</li>
-          <li data-i18n="exp1b3">Integrating tests into the CI/CD pipeline.</li>
+          <li data-i18n="exp1b1">Designed comprehensive test cases covering various network and security scenarios, including authentication, authorization, data encryption, and secure communication protocols.</li>
+          <li data-i18n="exp1b2">Developed automated test scripts using C# as the primary programming language.</li>
+          <li data-i18n="exp1b3">Utilized Selenium WebDriver with C# bindings to automate interactions with web elements.</li>
+          <li data-i18n="exp1b4">Used FlaUI, a framework for automated UI testing of Windows applications, with C# for desktop automation.</li>
+          <li data-i18n="exp1b5">Utilized testing frameworks such as NUnit, MSTest, or xUnit for writing and executing tests.</li>
+          <li data-i18n="exp1b6">Set up CI/CD pipelines using tools like Siemens specific GitLab and GitHub Actions.</li>
+          <li data-i18n="exp1b7">Collaborated with the development team to analyze and troubleshoot issues identified during testing.</li>
         </ul>
       </article>
+      <!-- Televic -->
       <article class="card">
         <header>
-          <h3 data-i18n="exp2Role">Junior QA Tester</h3>
-          <span class="meta"><span data-i18n="exp2Company">Company YYY</span> · 2020 – 2022</span>
+          <img src="logo/televic.png" alt="Televic Logo" class="company-logo">
+          <div class="card-titles">
+            <h3 data-i18n="exp2Role">Hardware Test Engineer</h3>
+            <span class="meta"><span data-i18n="exp2Company">Televic</span> · 2020 – 2023</span>
+          </div>
         </header>
         <ul>
-          <li data-i18n="exp2b1">Manual testing of mobile apps and web portals.</li>
-          <li data-i18n="exp2b2">Documenting and tracking defects in Jira.</li>
+          <li data-i18n="exp2b1">Rigorously tested and validated hardware components, focusing on programming, troubleshooting, and functional testing of Linux-based Printed Circuit Boards (PCBs) and end products.</li>
+          <li data-i18n="exp2b2">Utilized Python and its libraries to execute comprehensive tests, ensuring product reliability and performance.</li>
+          <li data-i18n="exp2b3">Played a crucial role in developing and maintaining the test framework, providing partial support for its functionalities.</li>
+          <li data-i18n="exp2b4">Leveraged expertise in testing methodologies and programming to contribute effectively to the quality assurance process.</li>
+        </ul>
+      </article>
+      <!-- Imesa -->
+      <article class="card">
+        <header>
+          <img src="logo/imesa.png" alt="Imesa Logo" class="company-logo">
+          <div class="card-titles">
+            <h3 data-i18n="exp3Role">Electrical Design Engineer</h3>
+            <span class="meta"><span data-i18n="exp3Company">Imesa</span> · 2018 – 2020</span>
+          </div>
+        </header>
+        <ul>
+          <li data-i18n="exp3b1">Designed electrical wiring diagrams using AutoCAD Electrical, ensuring compliance with industry standards and project requirements.</li>
+          <li data-i18n="exp3b2">Led the assembly of electrical panels, encompassing low and medium voltage systems, MCC, and PLC configurations.</li>
+          <li data-i18n="exp3b3">Planned and executed mechanical switch assembly processes, ensuring optimal functionality and performance.</li>
+          <li data-i18n="exp3b4">Utilized SolidWorks to design and develop mechanical units, meeting design specifications and performance criteria.</li>
+          <li data-i18n="exp3b5">Collaborated with cross-functional teams to ensure seamless integration of electrical and mechanical components.</li>
+          <li data-i18n="exp3b6">Conducted quality assurance checks and troubleshooting to rectify design and assembly issues, ensuring product reliability and safety.</li>
         </ul>
       </article>
     </section>
-    <!-- TRAINING -->
-    <section id="training" class="panel" role="tabpanel">
-      <h2 data-i18n="trainTitle">Training</h2>
+    <!-- EDUCATION -->
+    <section id="education" class="panel" role="tabpanel">
+      <h2 data-i18n="eduTitle">Education</h2>
+      
+      <!-- University Degree -->
       <article class="card">
         <header>
-          <h3 data-i18n="train1Title">Advanced Test Automation with Python</h3>
-          <span class="meta" data-i18n="train1Meta">Online course · 2023</span>
+          <img src="logo/uht.png" alt="UFT Logo" class="company-logo">
+          <h3 data-i18n="eduUniDegree">Bachelor in Automation Engineering</h3>
+          <span class="meta"><span data-i18n="eduUniName">UFT – University of Food Technologies, Plovdiv</span> · September 2013 – September 2018</span>
         </header>
-        <p data-i18n="train1Desc">Building a test framework with pytest, the page object model and CI integration.</p>
+        <ul>
+          <li data-i18n="eduUnib1">Completed program specializing in automation engineering.</li>
+          <li data-i18n="eduUnib2">Acquired comprehensive knowledge and practical skills in automation systems, PLC programming, pneumatics, sensors, and semiconductor devices.</li>
+          <li data-i18n="eduUnib3">Participated in projects and activities focused on the design, implementation, and troubleshooting of automated systems.</li>
+          <li data-i18n="eduUnib4">Proficient in software tools commonly used in automation engineering: AutoCAD, SolidWorks, MATLAB, Zelio, TIA Portal.</li>
+        </ul>
       </article>
+      <!-- High School Degree -->
       <article class="card">
         <header>
-          <h3 data-i18n="train2Title">ISTQB Foundation Level</h3>
-          <span class="meta" data-i18n="train2Meta">2021</span>
+          <img src="logo/pgee.png" alt="Pgee Logo" class="company-logo">
+          <h3 data-i18n="eduHighDegree">Professional in Information and Technology</h3>
+          <span class="meta"><span data-i18n="eduHighName">VEE – Vocational High School for Electrical Engineering, Sliven</span> · September 2008 – May 2013</span>
         </header>
-        <p data-i18n="train2Desc">Testing fundamentals, test techniques and the test process.</p>
+        <ul>
+          <li data-i18n="eduHighb1">Completed program specializing in electrical engineering and information technology.</li>
+          <li data-i18n="eduHighb2">Developed foundational knowledge and practical skills in electrical systems, circuits, and technology.</li>
+          <li data-i18n="eduHighb3">Gained hands-on experience with various tools and equipment used in electrical engineering.</li>
+          <li data-i18n="eduHighb4">Proficient in programming languages: Python.</li>
+          <li data-i18n="eduHighb5">Familiar with front-end development technologies: HTML, CSS, JavaScript, and database management.</li>
+        </ul>
       </article>
     </section>
     <!-- CERTIFICATES -->
@@ -99,31 +155,53 @@
       <h2 data-i18n="certsTitle">Certificates</h2>
       <ul class="cert-list">
         <li>
-          <span><strong>ISTQB CTFL</strong> – 2021</span>
-          <a href="certs/istqb-ctfl.pdf" target="_blank" rel="noopener" data-i18n="view">View</a>
+          <img src="logo/google.png" alt="Google Logo" class="company-logo">
+          <span><strong data-i18n="cert1Name">Google Cybersecurity</strong> – <span data-i18n="cert1Meta">Google</span></span>
+          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/GSAEF4SECXGC" target="_blank" rel="noopener" data-i18n="view">View</a>
         </li>
         <li>
-          <span><strong>Playwright Certified Engineer</strong> – 2024</span>
-          <a href="certs/playwright.pdf" target="_blank" rel="noopener" data-i18n="view">View</a>
+          <img src="logo/softuni.png" alt="SoftUni Logo" class="company-logo">
+          <span><strong data-i18n="cert2Name">QA Basics</strong> – <span data-i18n="cert2Meta">SoftUni</span></span>
+          <a href="https://softuni.bg/certificates/details/188826/1c6a23e5" target="_blank" rel="noopener" data-i18n="view">View</a>
+        </li>
+        <li>
+          <img src="logo/ibm.png" alt="IBM Logo" class="company-logo">
+          <span><strong data-i18n="cert3Name">Agile and Scrum</strong> – <span data-i18n="cert3Meta">IBM</span></span>
+          <a href="courses/agile.pdf" target="_blank" rel="noopener" data-i18n="view">View</a>
+        </li>
+        <li>
+          <img src="logo/ibm.png" alt="IBM Logo" class="company-logo">
+          <span><strong data-i18n="cert4Name">DevOps</strong> – <span data-i18n="cert4Meta">IBM</span></span>
+          <a href="courses/devops.pdf" target="_blank" rel="noopener" data-i18n="view">View</a>
+        </li>
+        <li>
+          <img src="logo/google.png" alt="Google Logo" class="company-logo">
+          <span><strong data-i18n="cert5Name">Git and Github</strong> – <span data-i18n="cert5Meta">Google</span></span>
+          <a href="courses/github.pdf" target="_blank" rel="noopener" data-i18n="view">View</a>
+        </li>
+        <li>
+          <img src="logo/siemens.png" alt="Siemens Logo" class="company-logo">
+          <span><strong data-i18n="cert6Name">Building Automation Networks</strong> – <span data-i18n="cert6Meta">Siemens</span></span>
+          <a href="courses/btnetwork.pdf" target="_blank" rel="noopener" data-i18n="view">View</a>
         </li>
       </ul>
     </section>
-<!-- TESTIMONIALS -->
+    <!-- MY PROJECTS -->
+    <section id="myprojects" class="panel" role="tabpanel">
+      <h2 data-i18n="projectsTitle">GitHub Projects</h2>
+      <div id="projectsList">
+        <article class="card">
+          <p data-i18n="projectsEmpty">Projects will be added soon...</p>
+        </article>
+      </div>
+    </section>
+    <!-- TESTIMONIALS -->
     <section id="testimonials" class="panel" role="tabpanel">
       <h2 data-i18n="testTitle">Testimonials</h2>
-      <blockquote class="testimonial">
-        <p data-i18n="test1Quote">"Metin is extremely organized and thorough. His automation saves hours of manual work every sprint."</p>
-        <footer data-i18n="test1Author">— Name Surname, Test Manager, Company XXX</footer>
-      </blockquote>
-      <blockquote class="testimonial">
-        <p data-i18n="test2Quote">"Accurate and clear bug reports that the team could act on immediately."</p>
-        <footer data-i18n="test2Author">— Name Surname, Product Owner, Company YYY</footer>
-      </blockquote>
-      <!-- Approved testimonials from the database -->
       <div id="approvedList"></div>
+      
       <form id="testimonialForm" class="card testimonial-form" novalidate>
         <h3 data-i18n="formTitle">Add a testimonial</h3>
-        <!-- Honeypot: hidden from people, bots tend to fill it in -->
         <div class="hp" aria-hidden="true">
           <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
         </div>
@@ -149,9 +227,8 @@
           <button type="submit" class="btn" data-i18n="btnAdd">Send testimonial</button>
         </div>
         <p id="formStatus" class="form-status" role="status"></p>
-        <p class="form-note" data-i18n="formNote">Your testimonial will appear on the page after it is approved.</p>
+        <p class="form-note" data-i18n="formNote">Thank you for your testimonial!</p>
       </form>
-      <!-- Admin panel, opened from the footer link -->
       <div id="adminPanel" class="card testimonial-form admin-panel" hidden>
         <div id="adminLogin">
           <h3 data-i18n="adminTitle">Admin login</h3>
