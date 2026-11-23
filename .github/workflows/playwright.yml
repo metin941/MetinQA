@@ -30,4 +30,4 @@ jobs:
 
     - name: Run E2E Tests
       run: |
-        pytest qa/test_cv.py -v
+        pytest qa/test_cv.py -v --screenshot only-on-failure
