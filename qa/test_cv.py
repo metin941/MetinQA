@@ -2,13 +2,14 @@ import pytest
 from playwright.sync_api import sync_playwright, expect
 import pathlib
 
-@pytest.fixture(scope="session")
-def browser_context():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False, slow_mo=300)
-        context = browser.new_context()
-        yield context
-        browser.close()
+@pytest.fixture
+def page(browser_context):
+    page = browser_context.new_page()
+    # Resolve absolute path for local file loading in Playwright
+    html_path = pathlib.Path(__file__).parent.parent / "index.html"
+    page.goto(f"file://{html_path.resolve().as_posix()}")
+    yield page
+    page.close()
 
 @pytest.fixture
 def page(browser_context):
