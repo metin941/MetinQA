@@ -18,7 +18,7 @@ body {
   overflow: hidden;
   background: var(--dark);
   color: #fff;
-  padding: 1.5rem 1rem;
+  padding: 1.4rem 1rem;
 }
 /* Animated background canvas fills the hero */
 .bg-canvas {

@@ -45,8 +45,8 @@ const translations = {
     expTitle: "Professional experience",
     
     // Siemens
-    exp1Role: "Test Automation Engineer",
-    exp1Company: "Siemens — Plovdiv / HQ-Switzerland",
+    exp1Role: "Senior QA Engineer",
+    exp1Company: "Siemens",
     exp1b1: "Designed comprehensive test cases covering various network and security scenarios, including authentication, authorization, data encryption, and secure communication protocols.",
     exp1b2: "Developed automated test scripts using C# as the primary programming language.",
     exp1b3: "Utilized Selenium WebDriver with C# bindings to automate interactions with web elements.",
@@ -55,15 +55,15 @@ const translations = {
     exp1b6: "Set up CI/CD pipelines using tools like Siemens specific GitLab and GitHub Actions.",
     exp1b7: "Collaborated with the development team to analyze and troubleshoot issues identified during testing.",
     // Televic
-    exp2Role: "Hardware Test Engineer",
-    exp2Company: "Televic — Plovdiv / HQ-Belgium",
+    exp2Role: "Middleware Hardware Test Engineer",
+    exp2Company: "Televic",
     exp2b1: "Rigorously tested and validated hardware components, focusing on programming, troubleshooting, and functional testing of Linux-based Printed Circuit Boards (PCBs) and end products.",
     exp2b2: "Utilized Python and its libraries to execute comprehensive tests, ensuring product reliability and performance.",
     exp2b3: "Played a crucial role in developing and maintaining the test framework, providing partial support for its functionalities.",
     exp2b4: "Leveraged expertise in testing methodologies and programming to contribute effectively to the quality assurance process.",
     // Imesa
-    exp3Role: "Electrical Design Engineer",
-    exp3Company: "Imesa — Plovdiv / HQ-Italy",
+    exp3Role: "Middleware Electrical Design Engineer",
+    exp3Company: "Imesa",
     exp3b1: "Designed electrical wiring diagrams using AutoCAD Electrical, ensuring compliance with industry standards and project requirements.",
     exp3b2: "Led the assembly of electrical panels, encompassing low and medium voltage systems, MCC, and PLC configurations.",
     exp3b3: "Planned and executed mechanical switch assembly processes, ensuring optimal functionality and performance.",
@@ -177,8 +177,8 @@ const translations = {
     expTitle: "Професионален опит",
     
     // Siemens
-    exp1Role: "Test Automation Engineer",
-    exp1Company: "Siemens — Пловдив / Централа Швейцария",
+    exp1Role: "Senior QA Engineer",
+    exp1Company: "Siemens",
     exp1b1: "Проектиране на изчерпателни тест сценарии, покриващи различни мрежови и сигурностни сценарии, включително автентикация, оторизация, криптиране на данни и сигурни комуникационни протоколи.",
     exp1b2: "Разработване на автоматизирани тестови скриптове с използване на C# като основен език за програмиране.",
     exp1b3: "Използване на Selenium WebDriver с C# bindings за автоматизиране на взаимодействията с уеб елементи.",
@@ -187,15 +187,15 @@ const translations = {
     exp1b6: "Настройка на CI/CD пайплайни с инструменти като специфични за Siemens GitLab и GitHub Actions.",
     exp1b7: "Сътрудничество с развойния екип за анализ и отстраняване на проблеми, идентифицирани по време на тестването.",
     // Televic
-    exp2Role: "Hardware Test Engineer",
-    exp2Company: "Televic — Пловдив / Централа Белгия",
+    exp2Role: "Middleware Hardware Test Engineer",
+    exp2Company: "Televic",
     exp2b1: "Прецизно тестване и валидиране на хардуерни компоненти, с фокус върху програмиране, отстраняване на неизправности и функционално тестване на Linux-базирани печатни платки (PCB) и крайни продукти.",
     exp2b2: "Използване на Python и неговите библиотеки за изпълнение на изчерпателни тестове, гарантиращи надеждност и производителност.",
     exp2b3: "Ключова роля в разработването и поддръжката на тестовия фреймуърк и предоставяне на поддръжка за неговите функционалности.",
     exp2b4: "Прилагане на експертиза в методологиите за тестване и програмиране за ефективен принос към процеса на осигуряване на качеството.",
     // Imesa
-    exp3Role: "Electrical Design Engineer",
-    exp3Company: "Imesa — Пловдив / Централа Италия",
+    exp3Role: "Middleware Electrical Design Engineer",
+    exp3Company: "Imesa",
     exp3b1: "Проектиране на електрически схеми с помощта на AutoCAD Electrical, гарантиращо съответствие с индустриалните стандарти и изискванията на проекта.",
     exp3b2: "Ръководство на монтажа на електрически табла, обхващащи системи ниско и средно напрежение, MCC и PLC конфигурации.",
     exp3b3: "Планиране и изпълнение на процеси по сглобяване на механични превключватели за оптимална функционалност и производителност.",
